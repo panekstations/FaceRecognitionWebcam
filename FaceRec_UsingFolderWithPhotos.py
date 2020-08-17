@@ -15,6 +15,7 @@ video_capture = cv2.VideoCapture(0)
 
 known_face_encodings = []
 known_face_names = []
+# Input the directory with your known photos labeled in the filename. (ex, Obama.jpg)
 known_dir = '/Users/XXXXXXXXXXXX/PycharmProjects/face_recognition/known'
 for file in os.listdir(known_dir):
     img = cv2.imread(known_dir + '/' + file)
